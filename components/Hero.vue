@@ -85,9 +85,8 @@ export default {
 }
 
 .card {
-  width: 60%;
   height: 40rem;
-	max-width: 60rem !important;
+	max-width: 50rem !important;
   padding: 1rem;
   background-color: #1E1E1E;
   color:white;
