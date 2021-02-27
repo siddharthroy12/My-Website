@@ -146,8 +146,8 @@ p {
 }
 
 .tech-chip {
-  border-color: hsla(0,0%,100%,.12);
-  color: white;
+  border-color: hsla(0,0%,100%,.12) !important;
+  color: white !important;
   margin: 1rem 0;
 }
 
