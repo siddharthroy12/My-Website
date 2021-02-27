@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "nuxt": "2.14.12"
+    "nuxt": "2.14.12",
+    "@nuxtjs/vuetify": "^1.11.3"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.12.17",
-    "@nuxtjs/vuetify": "^1.11.3"
+    "@babel/preset-env": "7.12.17"
   }
 }
