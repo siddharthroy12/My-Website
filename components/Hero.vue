@@ -10,7 +10,8 @@
           Siddharth Roy
         </div>
       </div>
-      <div class="chips">
+      <div class="body-wrapper">
+        <div class="chips">
         <v-chip>
           Frontend Developer
         </v-chip>
@@ -65,6 +66,7 @@
           <v-icon>mdi-language-cpp</v-icon>
         </v-chip>
       </div>
+      </div>
     </div>
   </v-card>
 </div>
@@ -85,25 +87,24 @@ export default {
 }
 
 .card {
-  height: 40rem;
 	max-width: 50rem !important;
-  padding: 1rem;
   background-color: #1E1E1E !important;
   color:white !important;
 }
 
-.content {
+.profile-wrapper {
   position: relative;
   top: -120px;
-}
-
-.profile-wrapper {
-  
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.body-wrapper {
+  position: relative;
+  top: -100px;
 }
 
 .profile {
@@ -115,15 +116,17 @@ export default {
 
 .name {
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   font-size: 1.8rem;
 }
 
 .chips {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 1rem 0;
+  display: block;
+  text-align: center;
+}
+
+.chips span {
+  margin: 1rem 0.6rem;
 }
 
 .desc {
@@ -135,20 +138,19 @@ export default {
 }
 
 p {
-  margin: 1rem 0;
+  margin: 1rem 0 0;
 }
 
 .tech-chips {
-  display: flex;
+  display: block;
+  text-align: center;
   justify-content: center;
-  margin: 0rem 6rem;
-  gap: 10px;
 }
 
 .tech-chip {
   border-color: hsla(0,0%,100%,.12) !important;
   color: white !important;
-  margin: 1rem 0;
+  margin: 1rem 0.3rem;
 }
 
 </style>
