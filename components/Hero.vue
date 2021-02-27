@@ -88,8 +88,8 @@ export default {
   height: 40rem;
 	max-width: 50rem !important;
   padding: 1rem;
-  background-color: #1E1E1E;
-  color:white;
+  background-color: #1E1E1E !important;
+  color:white !important;
 }
 
 .content {
