@@ -8,18 +8,8 @@
     <v-card-text style="width: 100%">
       <div class="content">
         <ProjectCard />
-        <v-card elevation="2" class="project-card">
-          <v-card-title>My Website</v-card-title>
-          <v-card-text>
-            My Website
-          </v-card-text>
-        </v-card>
-        <v-card elevation="2" class="project-card">
-          <v-card-title>My Website</v-card-title>
-          <v-card-text>
-            My Website
-          </v-card-text>
-        </v-card>
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </v-card-text>
   </v-card>
@@ -38,6 +28,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -48,7 +39,7 @@ export default {
 }
 
 .title-icon {
-  color: white;
+  color: white !important;
   margin-right: 1rem;
 }
 
@@ -56,15 +47,20 @@ export default {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 30px;
-  gap: 30px;
   justify-content: center;
 }
 
 .project-card {
   background-color: #1E1E1E !important;
   color:white !important;
-  width: 45%;
+  width: 46%;
+  margin: 1rem;
+}
+
+@media (max-width: 760px) {
+  .project-card {
+    width: 100% !important;
+  }
 }
 
 </style>

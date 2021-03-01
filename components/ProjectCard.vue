@@ -1,5 +1,6 @@
 <template>
-  <v-card elevation="2" class="project-card">
+<v-hover v-slot='{ hover }'>
+  <v-card :elevation="hover ? 12 : 2" class="project-card">
     <v-card-title>My Website</v-card-title>
     <v-card-text class="desc">
       My Website
@@ -14,7 +15,9 @@
         <v-icon v-if="tech === 'Cpp'">mdi-language-cpp</v-icon>
         <v-icon v-if="tech === 'Typescript'">mdi-language-typescript</v-icon>
         <v-icon v-if="tech === 'Python'">mdi-language-python</v-icon>
-        {{ tech }}
+        <span v-if="tech !== 'Cpp'">
+          {{ tech }}
+        </span>
       </v-chip>
     </v-card-subtitle>
     <v-divider class="theme--dark"/>
@@ -29,6 +32,7 @@
       </v-btn>
     </v-card-actions>
   </v-card>
+</v-hover>
 </template>
 
 <script>
@@ -64,15 +68,11 @@ export default {
   background-color: #1E1E1E !important;
   color:white !important;
   width: 45%;
+  transition: all ease 100ms;
 }
 
 .desc {
   color: #c9c9c9 !important;
-}
-
-.techs {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .tech-chip {

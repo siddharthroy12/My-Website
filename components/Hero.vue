@@ -70,7 +70,6 @@
     </div>
   </v-card>
 </div>
-  
 </template>
 
 <script>
@@ -94,7 +93,7 @@ export default {
 
 .profile-wrapper {
   position: relative;
-  top: -120px;
+  top: -100px;
   width: 100%;
   display: flex;
   justify-content: center;
