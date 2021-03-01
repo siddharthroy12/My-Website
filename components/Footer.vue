@@ -11,7 +11,7 @@
 export default {
   data() {
     return {
-      hostname: window.location.hostname
+      hostname: !process.server ? window.location.hostname : 'Loading'
     }
   }
 }
