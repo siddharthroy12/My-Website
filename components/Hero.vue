@@ -5,7 +5,9 @@
       <div class="profile-wrapper">
         <img
           src="https://siddharthroy.pythonanywhere.com/static/base/img/profilepic.jpg"
-          class="profile">
+          class="profile"
+          alt="profile-pic"
+        >
         <div class="name">
           Siddharth Roy
         </div>
