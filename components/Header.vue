@@ -18,7 +18,7 @@
             </v-btn>
           </li>
           <li>
-            <v-btn depressed class="nav-btn">
+            <v-btn depressed class="nav-btn" href="#contact">
               Contact
             </v-btn>
           </li>
@@ -43,11 +43,14 @@ header {
 
 ul {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 !important;
 }
 
 li {
   list-style: none;
+  margin: 0.5rem;
 }
 
 .nav-btn {
