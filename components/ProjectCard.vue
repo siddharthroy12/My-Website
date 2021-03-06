@@ -48,8 +48,12 @@ export default {
 
   data() {
     return {
-      techStack: this.stack.split(',')
+      techStack: []
     }
+  },
+
+  async fetch() {
+    this.techStack = this.stack.split(',')
   }
 }
 </script>

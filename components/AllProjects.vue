@@ -29,9 +29,7 @@ export default {
 	},
 	async fetch() {
 		const projects = await this.$content('projects').fetch()
-    	console.log(projects)
 		this.projects = projects
-		console.log(this.projects.length)
 	}
 }
 </script>
