@@ -1,6 +1,6 @@
 <template>
 <v-app>
-    <div class="page">
+  <div class="page">
     <Header />
     <nuxt></nuxt>
     <Footer />
@@ -10,6 +10,13 @@
 
 <script>
 export default {
+  head: {
+    script: [
+      {
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
+      }
+    ]
+  }
 }
 </script>
 
