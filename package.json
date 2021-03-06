@@ -9,9 +9,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxtjs/vuetify": "^1.11.3",
     "core-js": "^3.8.3",
-    "nuxt": "2.14.12",
-    "@nuxtjs/vuetify": "^1.11.3"
+    "nuxt": "2.14.12"
   },
   "devDependencies": {
     "@babel/preset-env": "7.12.17"

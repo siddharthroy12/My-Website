@@ -1,9 +1,9 @@
 <template>
 <v-hover v-slot='{ hover }'>
   <v-card :elevation="hover ? 12 : 2" class="project-card">
-    <v-card-title>My Website</v-card-title>
+    <v-card-title>{{ title }}</v-card-title>
     <v-card-text class="desc">
-      My Website
+      {{ desc }}
     </v-card-text>
     <v-card-subtitle class="techs">
       <v-chip v-for="tech in techStack" :key="tech" class="tech-chip" outlined>
@@ -15,6 +15,7 @@
         <v-icon v-if="tech === 'Cpp'">mdi-language-cpp</v-icon>
         <v-icon v-if="tech === 'Typescript'">mdi-language-typescript</v-icon>
         <v-icon v-if="tech === 'Python'">mdi-language-python</v-icon>
+        <v-icon v-if="tech === 'Bootstrap'">mdi-bootstrap</v-icon>
         <span v-if="tech !== 'Cpp'">
           {{ tech }}
         </span>
@@ -40,24 +41,14 @@ export default {
   props: {
     title: String,
     desc: String,
-    stack: Array,
+    stack: String,
     live: String,
     code: String
   },
 
   data() {
     return {
-      techStack: [
-        'Javascript',
-        'Vue',
-        'Nuxt',
-        'Nodejs',
-        'React',
-        'React Native',
-        'Cpp',
-        'Typescript',
-        'Python'
-      ]
+      techStack: this.stack.split(',')
     }
   }
 }

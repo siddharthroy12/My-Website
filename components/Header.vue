@@ -3,14 +3,18 @@
       <nav>
         <ul>
           <li>
-            <v-btn depressed class="nav-btn">
-              Home
-            </v-btn>
+            <NuxtLink to="/">
+              <v-btn depressed class="nav-btn" >
+                Home
+              </v-btn>
+            </NuxtLink>
           </li>
           <li>
-            <v-btn depressed class="nav-btn">
-              Projects
-            </v-btn>
+            <NuxtLink to="/projects">
+              <v-btn depressed class="nav-btn" >
+                Projects
+              </v-btn>
+            </NuxtLink>
           </li>
           <li>
             <v-btn depressed class="nav-btn">
@@ -51,6 +55,10 @@ ul {
 li {
   list-style: none;
   margin: 0.5rem;
+}
+
+li a {
+  text-decoration: none;
 }
 
 .nav-btn {
