@@ -33,10 +33,14 @@ export default {
     }
   },
   created() {
-    window.addEventListener('scroll', this.handleScroll);
-    },
+    if (process.client) {
+      window.addEventListener('scroll', this.handleScroll);
+    }
+  },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
+    if (process.client) {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
   }
 }
 </script>
