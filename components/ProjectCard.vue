@@ -3,7 +3,7 @@
   <v-card :elevation="hover ? 12 : 2" class="project-card">
     <v-card-title>{{ project.title }}</v-card-title>
     <v-card-text class="desc">
-      {{ project.description }}
+      {{ project.desc }}
     </v-card-text>
     <v-card-subtitle class="techs">
       <v-chip v-for="tech in techStack" :key="tech" class="tech-chip" outlined>
