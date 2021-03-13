@@ -9,10 +9,8 @@
       <div class="content">
         <ProjectCard
 			    v-for="(project, index) in projects" :key="index"
-          :title="project.title"
-          :desc="project.description"
-          :stack="project.stack"
-		  />
+          :project="project"
+		    />
       </div>
     </v-card-text>
   </v-card>
@@ -60,18 +58,4 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.project-card {
-  background-color: #1E1E1E !important;
-  color:white !important;
-  width: 46%;
-  margin: 1rem;
-}
-
-@media (max-width: 760px) {
-  .project-card {
-    width: 100% !important;
-  }
-}
-
 </style>

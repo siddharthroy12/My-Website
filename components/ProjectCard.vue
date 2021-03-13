@@ -1,9 +1,9 @@
 <template>
 <v-hover v-slot='{ hover }'>
   <v-card :elevation="hover ? 12 : 2" class="project-card">
-    <v-card-title>{{ title }}</v-card-title>
+    <v-card-title>{{ project.title }}</v-card-title>
     <v-card-text class="desc">
-      {{ desc }}
+      {{ project.description }}
     </v-card-text>
     <v-card-subtitle class="techs">
       <v-chip v-for="tech in techStack" :key="tech" class="tech-chip" outlined>
@@ -23,11 +23,11 @@
     </v-card-subtitle>
     <v-divider class="theme--dark"/>
     <v-card-actions>
-      <v-btn class="project-btn" depressed>
+      <v-btn class="project-btn" depressed :href="project.code" target="_blank">
         <v-icon>mdi-code-tags</v-icon>
         <p>Code</p>
       </v-btn>
-      <v-btn class="project-btn" depressed>
+      <v-btn class="project-btn" depressed :href="project.live" target="_blank">
         <v-icon>mdi-eye</v-icon>
         <p>Live</p>
       </v-btn>
@@ -39,11 +39,7 @@
 <script>
 export default {
   props: {
-    title: String,
-    desc: String,
-    stack: String,
-    live: String,
-    code: String
+    project: Object
   },
 
   data() {
@@ -53,7 +49,7 @@ export default {
   },
 
   async fetch() {
-    this.techStack = this.stack.split(',')
+    this.techStack = this.project.stack.split(',')
   }
 }
 </script>
@@ -63,7 +59,9 @@ export default {
   background-color: #1E1E1E !important;
   color:white !important;
   width: 45%;
+  margin: 0.9rem;
   transition: all ease 100ms;
+  height: fit-content;
 }
 
 .desc {
@@ -88,5 +86,11 @@ export default {
 
 .project-btn p {
   margin: 0 5px;
+}
+
+@media (max-width: 760px) {
+  .project-card {
+    width: 100% !important;
+  }
 }
 </style>

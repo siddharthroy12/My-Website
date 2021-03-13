@@ -15,4 +15,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "desc", widget: "string"}
       - {label: "Tech Stack", name: "stack", widget: "string"}
+      - {label: "Code", name: "code", widget: "string"}
+      - {label: "Live", name: "live", widget: "string"}
       - {label: "Featured", name: "featured", widget: "boolean"}

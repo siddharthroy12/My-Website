@@ -7,9 +7,10 @@
     <v-divider class="theme--dark"/>
     <v-card-text style="width: 100%">
       <div class="content">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard
+			    v-for="(project, index) in projects" :key="index"
+          :project="project"
+		    />
       </div>
     </v-card-text>
   </v-card>
@@ -19,7 +20,16 @@
 
 <script>
 export default {
+  data() {
+    return {
+      projects: []
+    }
+  },
 
+  async fetch() {
+		const projects = await this.$content('projects').where({featured: true}).fetch()
+		this.projects = projects
+	}
 }
 </script>
 
@@ -49,18 +59,4 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.project-card {
-  background-color: #1E1E1E !important;
-  color:white !important;
-  width: 46%;
-  margin: 1rem;
-}
-
-@media (max-width: 760px) {
-  .project-card {
-    width: 100% !important;
-  }
-}
-
 </style>
