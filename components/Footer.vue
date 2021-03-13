@@ -45,7 +45,7 @@
       </li>
     </ul>
     <p class="hostname">
-      {{ hostname }}
+      © {{ hostname }}
     </p>
   </footer>
 </template>
