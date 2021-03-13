@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="text">
-        <p>From Web Apps and Mobile Apps to Games, check out my latest web projects.</p>
+        <p>From Web Apps and Mobile Apps to Games, check out my latest projects.</p>
       </div>
 	  </v-card>
   </div>
