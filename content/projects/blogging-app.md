@@ -6,5 +6,5 @@ desc: A simple Mini Blog I made using python and flask. It features an advance
 stack: Bootstrap,Flask,Python,Postgresql
 code: https://github.com/siddharthroy12/flaskblog
 live: http://minbg.herokuapp.com/
-featured: true
+featured: false
 ---
