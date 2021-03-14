@@ -23,11 +23,11 @@
     </v-card-subtitle>
     <v-divider class="theme--dark"/>
     <v-card-actions>
-      <v-btn class="project-btn" depressed :href="project.code" target="_blank">
+      <v-btn class="project-btn" depressed :href="project.code" target="_blank" rel="noreferrer">
         <v-icon>mdi-code-tags</v-icon>
         <p>Code</p>
       </v-btn>
-      <v-btn class="project-btn" depressed :href="project.live" target="_blank">
+      <v-btn class="project-btn" depressed :href="project.live" target="_blank" rel="noreferrer">
         <v-icon>mdi-eye</v-icon>
         <p>Live</p>
       </v-btn>

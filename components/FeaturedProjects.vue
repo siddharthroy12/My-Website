@@ -1,5 +1,5 @@
 <template>
-<div role="projects" class="_container">
+<div role="group" class="_container">
   <v-card elevation="2" class="card">
     <v-card-title>
       <v-icon class="title-icon">mdi-code-tags</v-icon>Featured Projects

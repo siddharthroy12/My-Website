@@ -1,10 +1,10 @@
 <template>
-<div role="hero" class="_container">
+<div role="main" class="_container">
   <v-card elevation="2" class="card">
     <div class="content">
       <div class="profile-wrapper">
         <img
-          src="https://siddharthroy.pythonanywhere.com/static/base/img/profilepic.jpg"
+          src="/img/profilepic.jpg"
           class="profile"
           alt="profile-pic"
         >
@@ -132,7 +132,7 @@ export default {
 
 .desc {
   text-align: center;
-  margin: 3rem 5rem;
+  margin: 3rem 4rem;
   color: #c9c9c9;
   word-spacing: 5px;
   font-size: 1.2rem;

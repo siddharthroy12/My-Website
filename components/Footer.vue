@@ -7,6 +7,7 @@
             <a
               href="https://github.com/siddharthroy12"
               target="_blank"
+              rel="noreferrer"
               v-bind="attrs"
               v-on="on">
               <v-icon>mdi-github</v-icon>
@@ -21,6 +22,7 @@
             <a
               href="https://twitter.com/Siddharth_Roy12"
               target="_blank"
+              rel="noreferrer"
               v-bind="attrs"
               v-on="on">
               <v-icon>mdi-twitter</v-icon>
@@ -35,6 +37,7 @@
             <a
               href="mailto:siddharthroy36912@gmail.com"
               target="_blank"
+              rel="noreferrer"
               v-bind="attrs"
               v-on="on">
               <v-icon>mdi-email</v-icon>
@@ -63,8 +66,8 @@ export default {
 <style>
 
 .footer {
-  background-color: #101010;
-  padding: 5rem;
+  background-color: #212121;
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -84,6 +87,8 @@ export default {
 
 .links a {
   text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
 }
 
 .links i {
@@ -91,7 +96,8 @@ export default {
 }
 
 .hostname {
-  margin: 2rem 0;
+  margin-bottom: 0 !important;
+  margin-top: 1rem;
 }
 
 </style>

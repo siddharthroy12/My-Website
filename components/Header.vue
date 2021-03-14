@@ -3,18 +3,14 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink to="/">
-              <v-btn depressed class="nav-btn" >
-                Home
-              </v-btn>
-            </NuxtLink>
+            <v-btn depressed class="nav-btn" nuxt="true" to="/">
+              Home
+            </v-btn>
           </li>
           <li>
-            <NuxtLink to="/projects">
-              <v-btn depressed class="nav-btn" >
-                Projects
-              </v-btn>
-            </NuxtLink>
+            <v-btn depressed class="nav-btn" nuxt="true" to='/projects'>
+              Projects
+            </v-btn>
           </li>
           <li>
             <v-btn depressed class="nav-btn">
