@@ -15,3 +15,37 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #c9c9c9;
 }
+
+/* Blog Content */
+
+.nuxt-content ol {
+  margin: 2rem 0;
+}
+
+.nuxt-content hr {
+  margin: 2rem 0;
+}
+
+.nuxt-content p {
+  margin-top: 16px;
+}
+
+.nuxt-content blockquote {
+  border-left: solid 7px #C9C9C9;
+  padding-left: 7px;
+}
+
+.nuxt-content pre {
+  background-color: #1E1E1E !important;
+}
+
+.nuxt-content code {
+  text-shadow: none !important;
+  color: white !important;
+  background-color: unset !important;
+}
+
+.token.operator, .token.entity, .token.url,
+.language-css.token.string, .style.token.string {
+  background-color: unset !important;
+}

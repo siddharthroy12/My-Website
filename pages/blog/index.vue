@@ -32,9 +32,27 @@ export default {
     }
   },
   methods: {
+    getText(element) {
+      if (element.type === 'text') {
+        return element.value
+      }
+
+      let res = ""
+
+      for(let i = 0; i < element.children.length; i++) {
+        res += this.getText(element.children[i])
+      }
+
+      return res
+    },
+
     stripContent(blog) {
-      return blog.content.slice(0, 200) + '...'
-    }
+      let someContent = ""
+      for(let i = 0; i < 5 || i < blog.body.children.length; i++) {
+        someContent += this.getText(blog.body.children[i])
+      }
+      return someContent.slice(0, 200) + '...'
+    },
   },
   async fetch() {
 		const blogs = await this.$content('blogs').fetch()
