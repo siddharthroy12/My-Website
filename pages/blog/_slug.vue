@@ -73,18 +73,19 @@ h1 {
 }
 
 .banner-container {
-  padding: 0 5rem;
   margin-bottom: 4rem;
 }
 
 .banner {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner-source {
   color: #c9c9c9;
-  text-align: right;
+  text-align: center;
   display: block;
 }
 </style>
