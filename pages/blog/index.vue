@@ -14,6 +14,7 @@
           :banner="blog.banner"
           :title="blog.title"
           :desc="stripContent(blog)"
+          :slug="blog.slug"
         />
       </div>
     </div>
@@ -53,6 +54,10 @@ export default {
   max-width: 50rem;
 }
 
+.header {
+  padding: 0 2rem;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -74,5 +79,9 @@ h3 {
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

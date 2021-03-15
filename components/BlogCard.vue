@@ -1,5 +1,5 @@
 <template>
-  <a class="_container">
+  <nuxt-link class="_container" :to="`/blog/${slug}`">
     <v-hover v-slot='{ hover }'>
       <v-card :elevation="hover ? 12 : 2" class="blog-card">
         <img :src="require(`~/${assetPath(banner)}`)"/>
@@ -9,7 +9,7 @@
         </div>
       </v-card>
     </v-hover>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>
@@ -36,7 +36,8 @@ export default {
 <style scoped>
 ._container {
   display: block;
-  width: 50%;
+  width: 40%;
+  margin: 1rem;
 }
 
 .blog-card {
@@ -58,5 +59,11 @@ h5 {
 p {
   margin-bottom: 0 !important;
   margin-top: 1rem;
+}
+
+@media (max-width: 630px) {
+  ._container {
+    width: 100%;
+  }
 }
 </style>

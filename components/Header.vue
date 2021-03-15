@@ -60,6 +60,6 @@ li a {
 .nav-btn {
   background-color: #121212 !important;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 </style>
