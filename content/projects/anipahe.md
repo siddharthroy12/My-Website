@@ -5,5 +5,5 @@ desc: A free open source mobile client for animepahe.com for browsing, watching
 stack: ReactNative
 code: https://github.com/siddharthroy12/anipahe
 live: https://github.com/siddharthroy12/anipahe/releases/tag/v1.0.0
-featured: false
+featured: true
 ---
