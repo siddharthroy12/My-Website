@@ -1,0 +1,62 @@
+<template>
+  <a class="_container">
+    <v-hover v-slot='{ hover }'>
+      <v-card :elevation="hover ? 12 : 2" class="blog-card">
+        <img :src="require(`~/${assetPath(banner)}`)"/>
+        <div class="padding">
+          <h5>{{ title }}</h5>
+          <p>{{ desc }}</p>
+        </div>
+      </v-card>
+    </v-hover>
+  </a>
+</template>
+
+<script>
+export default {
+  props: {
+    banner: String,
+    title: String,
+    desc: String,
+    slug: String,
+  },
+
+  methods: {
+    slugToLink(slug) {
+      return `/blog/${slug}`
+    },
+
+    assetPath(src) {
+      return src.slice(1, src.length)
+    }
+  }
+}
+</script>
+
+<style scoped>
+._container {
+  display: block;
+  width: 50%;
+}
+
+.blog-card {
+  transition: all ease 100ms;
+}
+
+img {
+  width: 100%
+}
+
+.padding {
+  padding: 1rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin-bottom: 0 !important;
+  margin-top: 1rem;
+}
+</style>
