@@ -18,7 +18,7 @@ html {
 
 /* Blog Content */
 
-.nuxt-content ol {
+.nuxt-content ol, .nuxt-content ul {
   margin: 2rem 0;
 }
 
