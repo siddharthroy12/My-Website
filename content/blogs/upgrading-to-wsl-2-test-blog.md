@@ -3,7 +3,7 @@ title: Upgrading to Wsl 2 (Test Blog)
 banner: /assets/uploads/banner.jpg
 banner_source: https://unsplash.com/@cbpsc1
 ---
-This blog is a testing blog. Half of the blog is gibberish, I only kept this blog because I don't have right now time to write a real one.
+This blog is a testing blog. Half of the blog is gibberish, I only kept this blog because I don't have time right now to write a real one.
 
 Sed ut perspiciatis unde omnis:
 
