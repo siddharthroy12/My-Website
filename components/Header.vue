@@ -13,7 +13,7 @@
             </v-btn>
           </li>
           <li>
-            <v-btn depressed class="nav-btn">
+            <v-btn depressed class="nav-btn" nuxt="true" to='/blog'>
               Blog
             </v-btn>
           </li>

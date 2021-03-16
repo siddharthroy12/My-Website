@@ -1,5 +1,5 @@
 ---
-title: Upgrading to Wsl 2
+title: Upgrading to Wsl 2 (Test Blog)
 banner: /assets/uploads/banner.jpg
 banner_source: https://unsplash.com/@cbpsc1
 ---
