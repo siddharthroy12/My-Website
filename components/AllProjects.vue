@@ -25,6 +25,7 @@ export default {
 			projects: []
 		}
 	},
+  
 	async fetch() {
 		const projects = await this.$content('projects').fetch()
 		this.projects = projects

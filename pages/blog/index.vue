@@ -4,9 +4,7 @@
       <div class="header">
         <h1>Blog</h1>
         <h3>
-          So every dev has one problem we tend forget
-          how we did something but I found a solution and you are looking right at it.
-          Yes!! This blog is my solution, So welcome and I hope you find what you came looking for.
+          {{ description }}
         </h3>
       </div>
       <div class="blog-list">
@@ -23,14 +21,29 @@
 
 <script>
 export default {
-  head: {
-    titleTemplate: '%s - Blog'
+  head() {
+    return {
+      titleTemplate: '%s - Blog',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        }
+      ]
+    }
   },
+
   data() {
     return {
+      description:
+        'So every dev has one problem we tend forget how we did something but ' +
+        'I found a solution and you are looking right at it. Yes!! This blog is my solution ' +
+        'So welcome and I hope you find what you came looking for.',
       blogs: []
     }
   },
+
   methods: {
     getText(element) {
       if (element.type === 'text') {
@@ -54,6 +67,7 @@ export default {
       return someContent.slice(0, 200) + '...'
     },
   },
+
   async fetch() {
 		const blogs = await this.$content('blogs').fetch()
 		this.blogs = blogs

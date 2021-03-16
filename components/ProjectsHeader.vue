@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="text">
-        <p>From Web Apps and Mobile Apps to Games, check out my latest projects.</p>
+        <p>{{ desc }}</p>
       </div>
 	  </v-card>
   </div>
@@ -15,7 +15,9 @@
 
 <script>
 export default {
-
+  props: {
+    desc: String
+  }
 }
 </script>
 

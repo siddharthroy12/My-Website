@@ -15,14 +15,15 @@ export default {
     return {
       title: this.blog.title,
       meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: this.stripContent(this.blog)
-          }
-        ]
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.stripContent(this.blog)
+        }
+      ]
     }
   },
+
   methods: {
     getText(element) {
       if (element.type === 'text') {
@@ -45,10 +46,12 @@ export default {
       }
       return someContent.slice(0, 200) + '...'
     },
+    
     assetPath(src) {
       return src.slice(1, src.length)
     },
   },
+
   async asyncData({ params, $content }) {
     const blogs = await $content('blogs').where({slug: params.slug}).fetch()
     console.log(blogs[0])

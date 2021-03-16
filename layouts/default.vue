@@ -20,23 +20,38 @@ export default {
       {
         src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
       }
-    ]
+    ],
+
+    meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'I design simple beautiful software Applications ranging from ' +
+            'Websites, Blogs to Android Apps using a variety software Technologies such as ' +
+            'Nuxt/Vuejs , React, React Native'
+        }
+      ]
   },
+
   data() {
     return {
       showUpButton: false
     }
   },
+
   methods: {
     handleScroll() {
       this.showUpButton = window.scrollY > 100 ? true : false
     }
   },
+
   created() {
     if (process.client) {
       window.addEventListener('scroll', this.handleScroll);
     }
   },
+
   destroyed() {
     if (process.client) {
       window.removeEventListener('scroll', this.handleScroll);
