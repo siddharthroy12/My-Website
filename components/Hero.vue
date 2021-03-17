@@ -119,15 +119,19 @@ export default {
   text-align: center;
   margin: 3rem 0;
   font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
 .chips {
   display: block;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .chips span {
   margin: 1rem 0.6rem;
+  font-size: 1rem;
 }
 
 .desc {
