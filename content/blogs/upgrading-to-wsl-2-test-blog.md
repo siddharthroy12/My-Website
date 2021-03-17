@@ -3,29 +3,27 @@ title: Upgrading to Wsl 2 (Test Blog)
 banner: /assets/uploads/banner.jpg
 banner_source: https://unsplash.com/@cbpsc1
 ---
-This article assumses you are already running Wsl 1 on your system and your windows version is atleast 2004.
+This blog is a testing blog. Half of the blog is gibberish, I only kept this blog because I don't have time right now to write a real one.
 
-To check your windows version:
+Sed ut perspiciatis unde omnis:
 
 1. Press the Windows + R keys
 2. Type `winver` in Run window
 
-Now just for the purpose of confirmation, Let's check that you are actually running a Wsl 1:
+At vero eos et accusamus et iusto odio dignissimos ducimus 1:
 
 1. Open PowerShell
 2. Check the version with `wsl -l -v`\
-   Now if you see 1 in version column, then yes you are running wsl 1
+   placeat facere possimus, omnis voluptas assumenda estl 1
 3. Update the version with `wsl --set-version Ubuntu 2`
 
-> Replace Ubuntu with what ever distro you are running
+> Aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
 
-Now if that command worked for you, you can skip this whole part cause you have successfully upgraded to Wsl 2.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae 2,.
 
 - - -
 
-
-
-If that did not work for you and you got an error like this:
+Rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta:
 
 ```terminal
 Conversion in progress, this may take a few minutes...
@@ -34,18 +32,16 @@ Please enable the Virtual Machine Platform Windows feature and ensure virtualiza
 For information please visit https://aka.ms/wsl2-install
 ```
 
-You will have to enable Virtual Machine Platform from settings, to do that:
+Molestias excepturi sint occaecati cupiditate non provident, similiquet:
 
 1. Type `Windows features` in usual window search option at the bottom left on taskbar
 2. Now, find and check Virtual Machine Platform from those options
 
-Alright, so try to run update version command again. If it works that's great
+Itaque earum rerum hic tenetur a sapiente delectus
 
 - - -
 
-
-
-But if you are still getting the same error.
+Nam libero tempore, cum soluta nobis est.
 
 The problem now is with hyper-v. I know the error message doesn't exactly say that but I've found, hyper-v is a required when running Wsl 2. If you want to read more about it, Refer this [link](https://github.com/microsoft/WSL/issues/5363)
 
@@ -67,8 +63,6 @@ wsl --set-version Ubuntu 2
 If it worked, wsl 2 is running successfully.
 
 - - -
-
-
 
 But again if you get an error which is looking like this, then:
 
