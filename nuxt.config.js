@@ -43,7 +43,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'G-YH6PJZY2MK'
+    id: 'UA-192734981-1'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
