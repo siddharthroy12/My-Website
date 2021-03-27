@@ -113,6 +113,9 @@ export default {
   height: 200px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 50%;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 .name {
