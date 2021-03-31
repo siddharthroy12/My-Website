@@ -2,7 +2,7 @@
   <article>
     <h1>{{blog.title}}</h1>
     <div class="banner-container">
-      <img class="banner" :src="require(`~/${assetPath(blog.banner)}`)" alt="Banner">
+      <img class="banner" src="/img/uploads/campaign-creators-ieiuits149m-unsplash.jpg" alt="Banner">
       <a class="banner-source" :href="blog.banner_source" rel="noreferrer">Source of the picture</a>
     </div>
     <nuxt-content :document="blog"/>
@@ -46,15 +46,10 @@ export default {
       }
       return someContent.slice(0, 200) + '...'
     },
-    
-    assetPath(src) {
-      return src.slice(1, src.length)
-    },
   },
 
   async asyncData({ params, $content }) {
     const blogs = await $content('blogs').where({slug: params.slug}).fetch()
-    console.log(blogs[0])
     return { blog: blogs[0] }
   },
 }
@@ -69,7 +64,7 @@ article {
   margin-bottom: 5rem;
 }
 
-h1 {
+article > h1 {
   text-align: center;
   font-size: 2rem;
   margin: 3rem 0;

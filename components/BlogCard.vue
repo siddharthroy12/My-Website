@@ -2,7 +2,7 @@
   <nuxt-link class="_container" :to="`/blog/${slug}`">
     <v-hover v-slot='{ hover }'>
       <v-card :elevation="hover ? 12 : 2" class="blog-card">
-        <img :src="require(`~/${assetPath(banner)}`)"/>
+        <img :src="banner"/>
         <div class="padding">
           <h5>{{ title }}</h5>
           <p>{{ desc }}</p>
@@ -25,10 +25,6 @@ export default {
     slugToLink(slug) {
       return `/blog/${slug}`
     },
-
-    assetPath(src) {
-      return src.slice(1, src.length)
-    }
   }
 }
 </script>
