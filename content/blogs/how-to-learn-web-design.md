@@ -8,9 +8,9 @@ There are to methods which most Designers use
 1. Copypasting
 2. Using Reference
 
-# **1. Copypasting**
+# **1. Copyping**
 
-By copypasting I don't mean copying the entire design of someone's else website and use it for your website but instead use it as a study material.
+By copying I don't mean copying the entire design of someone's else website and use it for your website but instead use it as a study material.
 
 When you are new to web design you have to learn a lot of things like Typograhpy, Layout, Colors, etc. And the best way to learn all these thing is to copy the design of your favourite website made by professional designers.
 
@@ -25,3 +25,7 @@ When you have studied enough using copy pasting now its time for to create your 
 Do not copy everything from it but take some bits and modify them as your preferences. Like chaging the color pallate, font size, layout, etc. Make sure it doesn't look like any of those website and make it your own creation.
 
 But be carefull do not copy the copyrighted content from any websites like images or content. You should never copypaste the design of others on your websites but using them as references is okay.
+
+
+
+This is my first ever blog hope you liked it.
