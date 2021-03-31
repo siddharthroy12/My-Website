@@ -35,6 +35,7 @@ export default {
 
 <style scoped>
 header {
+  margin-top: 2rem;
   background-color: #121212;
   padding: 1rem;
   display: flex;
