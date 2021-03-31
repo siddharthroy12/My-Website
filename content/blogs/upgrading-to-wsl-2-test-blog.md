@@ -8,7 +8,7 @@ There are to methods which most Designers use
 1. Copypasting
 2. Using Reference
 
-**1. Copypasting:**
+# **1. Copypasting:**
 
 By copypasting I don't mean copying the entire design of someone's else website and use it for your website but instead use it as a study material.
 
@@ -18,7 +18,7 @@ Like for example if you want to learn how to design a product page search "produ
 
 ![Picture of google image search](/assets/uploads/screenshot_2021-03-31_14-41-25.png "Templates for marketing site")
 
-**2. Using Reference**
+# **2. Using Reference**
 
 When you have studied enough using copy pasting now its time for to create your own unique design, For this you should references. Depending on the subject of your website search for a couple of similar websites and use them as a reference.
 
